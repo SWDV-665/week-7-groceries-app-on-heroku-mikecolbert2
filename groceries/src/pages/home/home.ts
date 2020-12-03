@@ -41,10 +41,10 @@ export class HomePage {
         error => this.errorMessage = <any>error);
   }
 
-  removeItem(item, id) {
-    console.log("removing item - ", id); 
+  removeItem(item) {
+    console.log("removing item - " + item.name); 
 
-    this.dataService.removeItem(id);
+    this.dataService.removeItem(item._id);
        
   }
 
